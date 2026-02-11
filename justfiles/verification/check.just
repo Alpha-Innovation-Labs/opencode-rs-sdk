@@ -3,6 +3,6 @@
 # Example: just check
 
 check:
-    @echo "🔍 Checking opencode_rs..."
+    @echo "🔍 Checking opencode-rs-sdk..."
     cargo check
     @echo "✅ Check complete!"

@@ -3,6 +3,6 @@
 # Example: just test
 
 test:
-    @echo "🧪 Running all tests for opencode_rs..."
+    @echo "🧪 Running all tests for opencode-rs-sdk..."
     cargo test --all-targets
     @echo "✅ All tests passed!"

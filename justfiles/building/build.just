@@ -3,6 +3,6 @@
 # Example: just build
 
 build:
-    @echo "🔨 Building opencode_rs..."
+    @echo "🔨 Building opencode-rs-sdk..."
     cargo build
     @echo "✅ Build complete!"

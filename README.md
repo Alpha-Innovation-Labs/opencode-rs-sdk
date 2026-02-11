@@ -1,4 +1,4 @@
-# opencode_rs
+# opencode-rs-sdk
 
 Rust SDK for OpenCode (HTTP-first hybrid with SSE streaming). Provides an async client for HTTP endpoints and Server-Sent Events (SSE) subscriptions, with optional helpers for managing a local server and CLI integration.
 
@@ -22,7 +22,7 @@ Add the crate to your Cargo.toml:
 
 ```toml
 [dependencies]
-opencode_rs = "0.1.0"
+opencode-rs-sdk = "0.1.3"
 ```
 
 Feature flags:

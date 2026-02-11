@@ -3,6 +3,6 @@
 # Example: just clippy
 
 clippy:
-    @echo "🔍 Running clippy on opencode_rs..."
+    @echo "🔍 Running clippy on opencode-rs-sdk..."
     cargo clippy --all-targets -- -D warnings
     @echo "✅ Clippy complete!"

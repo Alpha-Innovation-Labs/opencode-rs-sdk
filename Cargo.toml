@@ -1,12 +1,12 @@
 [package]
-name = "opencode_rs"
+name = "opencode-rs-sdk"
 version = "0.1.3"
 edition = "2024"
 authors = ["Allison Durham"]
 description = "Rust SDK for OpenCode (HTTP-first hybrid with SSE streaming)"
 repository = "https://github.com/allisoneer/agentic_auxilary"
 homepage = "https://github.com/allisoneer/agentic_auxilary"
-documentation = "https://docs.rs/opencode_rs"
+documentation = "https://docs.rs/opencode-rs-sdk"
 license = "Apache-2.0"
 keywords = ["opencode", "sdk", "http", "sse", "streaming"]
 categories = ["api-bindings", "asynchronous", "development-tools"]
