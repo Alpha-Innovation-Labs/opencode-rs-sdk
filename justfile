@@ -31,12 +31,15 @@ help:
     @echo "  just \033[0;33mtest-lib\033[0m                 \033[0;32mRun unit tests only\033[0m"
     @echo ""
     @echo "\033[1;35m  Examples:\033[0m"
-    @echo "  just \033[0;33mexample\033[0m <name>          \033[0;32mRun a specific example\033[0m"
-    @echo "  just \033[0;33moc-openagora\033[0m <prompt>    \033[0;32mRun OpenAgora example\033[0m"
-    @echo "  just \033[0;33mendpoint-parity\033[0m          \033[0;32mCompare endpoints with OpenAPI\033[0m"
+    @echo "  just \033[0;33moc-example\033[0m <name>       \033[0;32mRun a specific example\033[0m"
+    @echo "  just \033[0;33moc-pick-conversation\033[0m     \033[0;32mInteractively select conversation\033[0m"
+    @echo "  just \033[0;33moc-list-conversations\033[0m    \033[0;32mList all conversations\033[0m"
+    @echo "  just \033[0;33moc-list-projects\033[0m         \033[0;32mList all projects\033[0m"
+    @echo "  just \033[0;33moc-clean-conversations\033[0m   \033[0;32mClean conversations by pattern\033[0m"
     @echo ""
     @echo "\033[1;35m  Utilities:\033[0m"
     @echo "  just \033[0;33mclean\033[0m                    \033[0;32mClean build artifacts\033[0m"
+    @echo "  just \033[0;33mpub\033[0m                      \033[0;32mPublish to crates.io\033[0m"
     @echo ""
     @echo ""
 
@@ -60,13 +63,16 @@ import 'justfiles/testing/test.just'
 import 'justfiles/testing/test-lib.just'
 
 # ============================================================================
-# Example Commands
+# Example Commands (oc-* recipes)
 # ============================================================================
-import 'justfiles/examples/run-example.just'
-import 'justfiles/examples/oc-openagora.just'
-import 'justfiles/examples/endpoint-parity.just'
+import 'justfiles/examples/oc-example.just'
+import 'justfiles/examples/oc-pick-conversation.just'
+import 'justfiles/examples/oc-list-conversations.just'
+import 'justfiles/examples/oc-list-projects.just'
+import 'justfiles/examples/oc-clean-conversations.just'
 
 # ============================================================================
 # Utilities Commands
 # ============================================================================
 import 'justfiles/utilities/clean.just'
+import 'justfiles/utilities/pub.just'
