@@ -1,6 +1,6 @@
 [package]
 name = "opencode-sdk"
-version = "0.1.6"
+version = "0.1.7"
 edition = "2024"
 authors = ["Alpha Innovation Labs", "Piotr Yordanov"]
 description = "Rust SDK for OpenCode (HTTP-first hybrid with SSE streaming)"
