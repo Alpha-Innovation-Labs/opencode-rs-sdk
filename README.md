@@ -1,4 +1,4 @@
-# opencode-rs-sdk
+# opencode-sdk
 
 Rust SDK for OpenCode (HTTP-first hybrid with SSE streaming). Provides an async client for HTTP endpoints and Server-Sent Events (SSE) subscriptions, with optional helpers for managing a local server and CLI integration.
 
@@ -22,7 +22,7 @@ Add the crate to your Cargo.toml:
 
 ```toml
 [dependencies]
-opencode-rs-sdk = "0.1.3"
+opencode-sdk = "0.1.4"
 ```
 
 Feature flags:
@@ -224,13 +224,45 @@ match client.sessions().delete(&session.id).await {
 
 ## Examples
 
-Run the included examples (requires a local OpenCode server):
+The following examples demonstrate various SDK capabilities. All examples require a local OpenCode server running (`opencode serve`).
+
+### Core Functionality
+
+- **[basic](examples/basic.rs)** - Create a session and send a simple HTTP prompt
+- **[streaming](examples/streaming.rs)** - Subscribe to SSE events and stream responses in real-time
+- **[full_workflow](examples/full_workflow.rs)** - Complete workflow demonstrating session lifecycle management
+
+### Server Management
+
+- **[managed_server](examples/managed_server.rs)** - Spawn and manage a local OpenCode server process programmatically (requires `server` feature)
+
+### CLI Integration
+
+- **[cli_runner](examples/cli_runner.rs)** - Execute OpenCode CLI commands programmatically with event streaming (requires `cli` feature)
+
+### OpenCode Operations
+
+- **[oc_helloworld](examples/oc_helloworld.rs)** - Simple "Hello World" style OpenCode interaction
+- **[oc_list_sessions](examples/oc_list_sessions.rs)** - List and display active sessions
+- **[oc_get_conversation](examples/oc_get_conversation.rs)** - Retrieve and display conversation history
+- **[oc_list_projects](examples/oc_list_projects.rs)** - List available projects
+- **[oc_clean_conversations](examples/oc_clean_conversations.rs)** - Clean up and remove old conversations
+- **[oc_streaming](examples/oc_streaming.rs)** - Advanced streaming patterns with OpenCode
+
+### Running Examples
+
 ```bash
-# Basic HTTP example
+# Basic HTTP example (requires http + sse features)
 cargo run --example basic
 
-# SSE streaming example
+# SSE streaming example (requires http + sse features)
 cargo run --example streaming
+
+# Managed server example (requires server feature)
+cargo run --example managed_server
+
+# CLI runner example (requires cli feature)
+cargo run --example cli_runner
 ```
 
 ## License
