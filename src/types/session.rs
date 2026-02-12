@@ -112,6 +112,7 @@ pub struct SessionTime {
 #[serde(rename_all = "camelCase")]
 pub struct RevertInfo {
     /// Message ID to revert to.
+    #[serde(rename = "messageID")]
     pub message_id: String,
     /// Part ID to revert to.
     #[serde(default, skip_serializing_if = "Option::is_none")]

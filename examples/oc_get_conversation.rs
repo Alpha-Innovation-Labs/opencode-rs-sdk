@@ -5,9 +5,9 @@
 //! Requires an OpenCode server running at localhost:4096:
 //!   opencode serve
 
-use opencode_rs::ClientBuilder;
-use opencode_rs::types::message::{Message, Part, ToolState};
-use opencode_rs::types::session::Session;
+use opencode_sdk::ClientBuilder;
+use opencode_sdk::types::message::{Message, Part, ToolState};
+use opencode_sdk::types::session::Session;
 
 /// Format duration in milliseconds to human-readable format
 fn format_duration(ms: i64) -> String {

@@ -4,7 +4,7 @@
 //!
 //! This example starts a managed OpenCode server automatically.
 
-use opencode_rs::runtime::ManagedRuntime;
+use opencode_sdk::runtime::ManagedRuntime;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {

@@ -34,6 +34,7 @@ help:
     @echo "  just \033[0;33moc-example\033[0m <name>       \033[0;32mRun a specific example\033[0m"
     @echo "  just \033[0;33moc-pick-conversation\033[0m     \033[0;32mInteractively select conversation\033[0m"
     @echo "  just \033[0;33moc-list-conversations\033[0m    \033[0;32mList all conversations\033[0m"
+    @echo "  just \033[0;33moc-get-conversation\033[0m      \033[0;32mView a single conversation\033[0m"
     @echo "  just \033[0;33moc-list-projects\033[0m         \033[0;32mList all projects\033[0m"
     @echo "  just \033[0;33moc-clean-conversations\033[0m   \033[0;32mClean conversations by pattern\033[0m"
     @echo ""
@@ -68,6 +69,7 @@ import 'justfiles/testing/test-lib.just'
 import 'justfiles/examples/oc-example.just'
 import 'justfiles/examples/oc-pick-conversation.just'
 import 'justfiles/examples/oc-list-conversations.just'
+import 'justfiles/examples/oc-get-conversation.just'
 import 'justfiles/examples/oc-list-projects.just'
 import 'justfiles/examples/oc-clean-conversations.just'
 
