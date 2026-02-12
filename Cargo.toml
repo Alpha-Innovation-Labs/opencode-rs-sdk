@@ -2,10 +2,10 @@
 name = "opencode-sdk"
 version = "0.1.6"
 edition = "2024"
-authors = ["Allison Durham"]
+authors = ["Alpha Innovation Labs", "Piotr Yordanov"]
 description = "Rust SDK for OpenCode (HTTP-first hybrid with SSE streaming)"
-repository = "https://github.com/allisoneer/agentic_auxilary"
-homepage = "https://github.com/allisoneer/agentic_auxilary"
+repository = "https://github.com/alpha-innovation-labs/opencode-rs-sdk"
+homepage = "https://github.com/alpha-innovation-labs/opencode-rs-sdk"
 documentation = "https://docs.rs/opencode-rs-sdk"
 license = "Apache-2.0"
 keywords = ["opencode", "sdk", "http", "sse", "streaming"]
