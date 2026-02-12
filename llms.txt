@@ -1,4 +1,4 @@
-# opencode-rs-sdk
+# opencode-sdk
 
 > Rust SDK for OpenCode HTTP API with SSE streaming support. Provides ergonomic async client, 15 REST API modules, 40+ event types, and managed server lifecycle.
 
@@ -64,14 +64,14 @@ let client = Client::builder().base_url(server.url()).build()?;
 Add to `Cargo.toml`:
 ```toml
 [dependencies]
-opencode-rs-sdk = "0.1"
+opencode-sdk = "0.1"
 # Or with all features:
-opencode-rs-sdk = { version = "0.1", features = ["full"] }
+opencode-sdk = { version = "0.1", features = ["full"] }
 ```
 
 Basic client setup:
 ```rust
-use opencode_rs_sdk::{Client, ClientBuilder};
+use opencode_sdk::{Client, ClientBuilder};
 
 let client = Client::builder()
     .base_url("http://127.0.0.1:4096")
@@ -484,7 +484,7 @@ CliEvent helper methods: `is_text()`, `is_step_start()`, `is_step_finish()`, `is
 
 **Import/Invoke:**
 ```rust
-use opencode_rs_sdk::{Client, ClientBuilder};
+use opencode_sdk::{Client, ClientBuilder};
 let client = Client::builder().build()?;
 ```
 
@@ -582,7 +582,7 @@ let messages = client.messages();
 
 **Import/Invoke:**
 ```rust
-use opencode_rs_sdk::sse::SseOptions;
+use opencode_sdk::sse::SseOptions;
 let subscription = client.subscribe_session(&session_id).await?;
 ```
 
@@ -615,7 +615,7 @@ let subscription = client.subscribe_session(&session_id).await?;
 
 **Import/Invoke:**
 ```rust
-use opencode_rs_sdk::server::{ManagedServer, ServerOptions};
+use opencode_sdk::server::{ManagedServer, ServerOptions};
 let server = ManagedServer::start(ServerOptions::new().port(8080)).await?;
 ```
 
@@ -650,7 +650,7 @@ let server = ManagedServer::start(ServerOptions::new().port(8080)).await?;
 
 **Import/Invoke:**
 ```rust
-use opencode_rs_sdk::cli::{CliRunner, RunOptions};
+use opencode_sdk::cli::{CliRunner, RunOptions};
 let mut runner = CliRunner::start("Hello", RunOptions::new()).await?;
 ```
 
