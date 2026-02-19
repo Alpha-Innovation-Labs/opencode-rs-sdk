@@ -1,1 +1,5 @@
-{"llms_path": "llms.txt", "last_generated_commit": "9b45e1bcc5e5c4789c7ddb714441c52196282c1c", "generated_at": "2026-02-12T00:08:22Z"}
+{
+  "llms_path": "llms.txt",
+  "last_generated_commit": "408e9e535965b9b4893e0ebae2cf5c53be0c872a",
+  "generated_at": "2026-02-19T16:31:43Z"
+}
